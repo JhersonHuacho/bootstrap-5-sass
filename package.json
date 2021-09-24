@@ -1,0 +1,23 @@
+{
+  "name": "boostrap-cinco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss scss/custom.scss css/custom.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\"",
+    "build": "purgecss --css css/custom.css --content index.html -o css/reducido.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "purgecss": "^4.0.3"
+  }
+}
